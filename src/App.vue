@@ -1,11 +1,13 @@
 <template>
-  <Welcome v-if="uiState === 'welcome'" />
-  <GameStart v-else-if="uiState === 'start'" />
-  <div v-else-if="uiState === 'gaming'">
-    <Score />
-    <Story />
+  <div id="app">
+    <Welcome v-if="uiState === 'welcome'" />
+    <GameStart v-else-if="uiState === 'start'" />
+    <div v-else-if="uiState === 'gaming'">
+      <Score />
+      <Story />
+    </div>
+    <GameEnd v-else />
   </div>
-  <GameEnd v-else />
 </template>
 
 <script lang="ts">
@@ -32,13 +34,4 @@ export default defineComponent({
 });
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="scss"></style>
