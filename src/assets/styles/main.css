@@ -1,0 +1,35 @@
+:root {
+  --color-primary: #16a085;
+  --color-secondary: #f4d03f;
+  --color-surface: white;
+  --color-background: white;
+  --color-text: black;
+}
+* {
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100vh;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: white;
+  color: black;
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+}
+
+p {
+}
