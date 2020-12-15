@@ -67,7 +67,6 @@ export default defineComponent({
   opacity: 1;
   transform: scale(0.6);
 }
-/* other states */
 .radio:hover + .effect,
 .radio:focus + .effect {
   border: 2px solid var(--color-primary);
@@ -105,7 +104,6 @@ export default defineComponent({
     transform: scale(0);
     transform-origin: center center;
   }
-
   &::before {
     background: var(--color-surface);
     opacity: 0;
