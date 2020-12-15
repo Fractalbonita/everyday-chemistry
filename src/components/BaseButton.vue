@@ -48,6 +48,11 @@ export default defineComponent({
   text-transform: uppercase;
   transition: 0.5s;
 
+  &:disabled {
+    background-image: none;
+    background-color: #d8d8d8;
+    cursor: not-allowed;
+  }
   &:hover,
   &:focus {
     background-position: right center; /* change the direction of the change here */
