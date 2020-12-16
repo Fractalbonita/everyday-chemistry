@@ -47,11 +47,11 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .container {
-  display: flex;
-  justify-content: flex-start;
   align-items: center;
-  flex-wrap: nowrap;
   cursor: pointer;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   margin: 0.5rem 0;
   position: relative;
 }
@@ -84,28 +84,28 @@ export default defineComponent({
   transform: scale(2.4);
 }
 .effect {
-  width: 16px;
-  height: 16px;
   border: 1px solid var(--color-text);
   border-radius: 100%;
+  height: 16px;
   margin-right: 16px;
   position: relative;
+  width: 16px;
 
   &::before,
   &::after {
+    border-radius: inherit;
     content: '';
     display: block;
-    width: inherit;
     height: inherit;
-    border-radius: inherit;
-    top: -2px;
     left: -2px;
     position: absolute;
+    top: -2px;
     transform: scale(0);
     transform-origin: center center;
+    width: inherit;
   }
   &::before {
-    background: var(--color-surface);
+    background: transparent;
     opacity: 0;
     transition: 0.3s;
   }
