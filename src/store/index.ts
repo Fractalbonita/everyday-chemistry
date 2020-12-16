@@ -5,7 +5,7 @@ export default createStore({
     uiState: 'welcome',
     player: '',
     sidekick: '',
-    sidekickOptions: ['Fairy', 'Dwarf', 'Witch', 'Goblin', 'Wizard'],
+    sidekickOptions: ['Fairy', 'Dwarf', 'Goblin', 'Wizard'],
     answer: '',
     score: 0,
     storyIndex: 0,
@@ -30,7 +30,7 @@ export default createStore({
           answerCorrect:
             'It is a natural mineral, which re-mineralizes your teeth.',
           answerFalse: 'It is a gas, which shields your teeth from cavities.',
-          answerWrong: 'It is natural mineral, which destroys bacteria.'
+          answerWrong: 'It is a natural mineral, which destroys bacteria.'
         }
       },
       {
