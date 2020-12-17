@@ -29,7 +29,8 @@ export default defineComponent({
   background-color: var(--color-input);
   border: none;
   border-radius: 25px;
-  box-shadow: 0 1px 5px var(--color-background) inset;
+  box-shadow: 0 1px 5px var(--color-text-shadow) inset;
+  margin: 1rem 0;
 
   &[value] {
     -webkit-appearance: none;
@@ -41,7 +42,7 @@ export default defineComponent({
       background-color: var(--color-input);
       border: none;
       border-radius: 25px;
-      box-shadow: 0 1px 5px var(--color-background) inset;
+      box-shadow: 0 1px 5px var(--color-text-shadow) inset;
     }
     &::-webkit-progress-value {
       background-color: var(--color-primary);
@@ -56,7 +57,6 @@ export default defineComponent({
       border-bottom-left-radius: 25px;
       border-top-right-radius: 25px;
       border-bottom-right-radius: 25px;
-      box-shadow: 0 0 4px var(--color-background) inset;
     }
     &::-moz-progress-bar {
       background-color: var(--color-primary);
@@ -71,7 +71,6 @@ export default defineComponent({
       border-bottom-left-radius: 25px;
       border-top-right-radius: 25px;
       border-bottom-right-radius: 25px;
-      box-shadow: 0 0 4px var(--color-background) inset;
     }
   }
 }
