@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="welcome-container">
     <h1>Welcome to the Everyday Chemistry Game!</h1>
     <p>
       In this game you will discover that we are surrounded by chemisty in many
