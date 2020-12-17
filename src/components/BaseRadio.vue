@@ -8,8 +8,8 @@
       class="radio"
     />
     <span class="effect"></span>
-    <span class="label">{{ label }} </span></label
-  >
+    <span class="label">{{ label }}</span>
+  </label>
 </template>
 
 <script lang="ts">
@@ -60,7 +60,9 @@ export default defineComponent({
   appearance: none;
 }
 .label {
+  color: inherit;
   cursor: pointer;
+  font-size: var(--font-size-body);
   font-weight: 500;
 }
 .radio:checked + .effect::before {
@@ -84,7 +86,7 @@ export default defineComponent({
   transform: scale(2.4);
 }
 .effect {
-  border: 1px solid var(--color-text);
+  border: 1px solid var(--color-surface);
   border-radius: 100%;
   height: 16px;
   margin-right: 16px;
