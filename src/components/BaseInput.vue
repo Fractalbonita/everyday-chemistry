@@ -96,7 +96,7 @@ export default defineComponent({
   color: var(--color-background);
   cursor: text;
   font-size: var(--font-size-body);
-  font-weight: 400;
+  font-weight: 500;
   height: 48px;
   outline: none;
   padding: 0 12px;
@@ -114,7 +114,7 @@ export default defineComponent({
     border: 1px solid var(--color-surface);
   }
   &:focus {
-    border: 2px solid var(--color-surface);
+    border: 1px solid var(--color-surface);
   }
 }
 </style>
