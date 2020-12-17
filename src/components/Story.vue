@@ -1,17 +1,17 @@
 <template>
-  <div class="container">
+  <div class="story-container">
     <BaseProgress
       id="progress"
       :max="stories.length + 1"
       :value="storyIndex + 1"
     />
-    <h2>{{ stories[storyIndex].time }}</h2>
-    <p>
+    <h2 class="story-time">{{ stories[storyIndex].time }}</h2>
+    <p class="story-text">
       {{ stories[storyIndex].story }}
     </p>
-    <h2>{{ stories[storyIndex].question }}</h2>
+    <h2 class="story-question">{{ stories[storyIndex].question }}</h2>
     <div v-for="[key, answer] in answers" :key="key + storyIndex">
-      <button type="button" @click="selectAnswer(answer)" class="button">
+      <button type="button" @click="selectAnswer(answer)" class="story-button">
         {{ answer }}
       </button>
     </div>
@@ -53,43 +53,66 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.button {
-  background-image: linear-gradient(
-    to right,
-    var(--color-primary) 0%,
-    var(--color-secondary) 51%,
-    var(--color-primary) 100%
-  );
-  background-size: 200% auto;
-  border: none;
-  border-radius: 25px;
-  box-shadow: 0 0 20px var(--color-box-shadow);
-  color: var(--color-surface);
-  cursor: pointer;
-  display: block;
-  font-size: var(--font-size-button);
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-  line-height: 1.5;
-  margin: 0.7rem 0;
-  outline: none;
-  padding: 12px 18px;
-  text-align: center;
-  transition: 0.5s;
-
-  &:hover,
-  &:focus {
-    background-position: right center;
-    color: var(--color-surface);
+.story {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  &:active {
-    background-image: none;
-    background-color: var(--color-primary);
+  &-time {
+    color: var(--color-primary);
+    font-family: inherit;
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+    margin: 1rem 0;
+  }
+  &-text {
+    color: var(--color-surface);
+    font-family: inherit;
+    font-size: var(--font-size-body);
+    font-weight: 400;
+    margin: 0.5rem 0;
+  }
+  &-question {
+    color: var(--color-surface);
+    font-family: inherit;
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+    margin: 1rem 0;
+  }
+  &-button {
+    background-image: linear-gradient(
+      to right,
+      var(--color-primary) 0%,
+      var(--color-secondary) 51%,
+      var(--color-primary) 100%
+    );
+    background-size: 200% auto;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 0 20px var(--color-box-shadow);
+    color: var(--color-surface);
+    cursor: pointer;
+    display: block;
+    font-size: var(--font-size-button);
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    margin: 0.7rem 0;
+    outline: none;
+    padding: 12px 18px;
+    text-align: center;
+    transition: 0.5s;
+
+    &:hover,
+    &:focus {
+      background-position: right center;
+      color: var(--color-surface);
+    }
+    &:active {
+      background-image: none;
+      background-color: var(--color-primary);
+    }
   }
 }
 </style>
