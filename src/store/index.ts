@@ -114,7 +114,7 @@ export default createStore({
         id: '9',
         time: '8 P.M.',
         story:
-          'Before we go to bed, it would be great to rediscover the day and go through the photos of the day, which we took with our smartphone. Smartphones are mobile phones that are comparable to a computers. You can use them for emailing, reading, watching films, and of course for texting and calling friends. When you want to watch a film, you have to touch the display. This kind of display is called touchscreen. Touchscreens consist of layers of glass that conduct electricity. This electricity is the result of tiny particles moving around.',
+          'Before we go to bed, it would be great to rediscover the day and go through the photos of the day, which we took with our smartphone. Smartphones are mobile phones that are comparable to a computer. You can use them for emailing, reading, watching films, and of course for texting and calling friends. When you want to watch a film, you have to touch the display. This kind of display is called touchscreen. Touchscreens consist of layers of glass that conduct electricity. This electricity is the result of tiny particles moving around.',
         question: 'What do you call these tiny particles?',
         answers: {
           answerCorrect: 'Electrons',
