@@ -26,22 +26,22 @@ export default defineComponent({
 .button {
   background-image: linear-gradient(
     to right,
-    #16a085 0%,
-    #f4d03f 51%,
-    #16a085 100%
+    var(--color-primary) 0%,
+    var(--color-secondary) 51%,
+    var(--color-primary) 100%
   );
   background-size: 200% auto;
   border: none;
   border-radius: 25px;
-  box-shadow: 0 0 20px #eee;
-  color: white;
+  box-shadow: 0 0 20px var(--color-box-shadow);
+  color: var(--color-surface);
   cursor: pointer;
   display: block;
-  font-size: 0.875rem;
+  font-size: var(--font-size-button);
   font-weight: 400;
   letter-spacing: 0.1rem;
   line-height: 1.5;
-  margin: 0;
+  margin: 1rem 0;
   outline: none;
   padding: 12px 18px;
   text-align: center;
@@ -50,18 +50,18 @@ export default defineComponent({
 
   &:disabled {
     background-image: none;
-    background-color: #d8d8d8;
+    background-color: var(--color-disabled);
     cursor: not-allowed;
   }
   &:hover,
   &:focus {
-    background-position: right center; /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
+    background-position: right center;
+    color: var(--color-surface);
   }
   &:active {
     background-image: none;
-    background-color: #16a085;
+    background-color: var(--color-primary);
+    color: var(--color-surface);
   }
 }
 </style>
