@@ -3,10 +3,7 @@
   <div class="content">
     <Welcome v-if="uiState === 'welcome'" />
     <GameStart v-else-if="uiState === 'start'" />
-    <div v-else-if="uiState === 'gaming'">
-      <Score />
-      <Story />
-    </div>
+    <Game v-else-if="uiState === 'gaming'" />
     <GameEnd v-else />
   </div>
 </template>
@@ -15,18 +12,16 @@
 import { defineComponent } from 'vue';
 import Welcome from './components/Welcome.vue';
 import GameStart from './components/GameStart.vue';
-import Story from './components/Story.vue';
-import Score from './components/Score.vue';
 import { mapState } from 'vuex';
 import GameEnd from './components/GameEnd.vue';
+import Game from './components/Game.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
     Welcome,
     GameStart,
-    Story,
-    Score,
+    Game,
     GameEnd
   },
   computed: {
@@ -70,6 +65,12 @@ export default defineComponent({
 .content {
   min-height: 100%;
   padding: 20px;
+
+  &::after {
+    content: ' ';
+    display: block;
+    height: 100px;
+  }
 }
 :root {
   --color-primary: #16a085;
@@ -108,8 +109,6 @@ body {
   line-height: 1.5;
   margin: 0;
   min-height: 100%;
-  text-align: center;
-  text-shadow: 0 0 3px var(--color-text-shadow);
 }
 h1 {
   color: var(--color-primary);
@@ -121,7 +120,6 @@ h1 {
 h2 {
   color: var(--color-surface);
   font-family: inherit;
-
   font-size: var(--font-size-h2);
   font-weight: 700;
   margin: 1rem 0;
@@ -129,15 +127,12 @@ h2 {
 h3 {
   color: var(--color-surface);
   font-family: inherit;
-
   font-size: var(--font-size-h3);
   font-weight: 500;
-  margin: 0.5rem 0;
+  margin: 0.7rem 0;
 }
 p {
-  color: var(--color-surface);
   font-family: inherit;
-
   font-size: var(--font-size-body);
   font-weight: 400;
   margin: 0.5rem 0;
