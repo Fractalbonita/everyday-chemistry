@@ -52,6 +52,25 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
+#app {
+  height: 100%;
+}
+.background {
+  filter: blur(1px);
+  opacity: 0.9;
+  left: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+}
+.content {
+  min-height: 100%;
+  padding: 20px;
+}
 :root {
   --color-primary: #16a085;
   --color-secondary: #f4d03f;
@@ -92,47 +111,39 @@ body {
   text-align: center;
   text-shadow: 0 0 3px var(--color-text-shadow);
 }
-#app {
-  height: 100%;
-}
-.background {
-  filter: blur(1px);
-  opacity: 0.9;
-  left: 0;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background-size: cover;
-  background-position: center;
-}
-.content {
-  min-height: 100%;
-  padding: 20px;
-}
 h1 {
   color: var(--color-primary);
+  font-family: inherit;
   font-size: var(--font-size-h1);
   font-weight: 900;
   margin: 1.5rem 0;
 }
 h2 {
   color: var(--color-surface);
+  font-family: inherit;
+
   font-size: var(--font-size-h2);
   font-weight: 700;
   margin: 1rem 0;
 }
 h3 {
   color: var(--color-surface);
+  font-family: inherit;
+
   font-size: var(--font-size-h3);
   font-weight: 500;
   margin: 0.5rem 0;
 }
 p {
   color: var(--color-surface);
+  font-family: inherit;
+
   font-size: var(--font-size-body);
   font-weight: 400;
   margin: 0.5rem 0;
+}
+button,
+input {
+  font-family: inherit;
 }
 </style>
