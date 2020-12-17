@@ -73,7 +73,7 @@ export default createStore({
       },
       {
         id: '6',
-        time: '14 P.M.',
+        time: '2 P.M.',
         story:
           'The weather is nice outside. Let’s go to the outdoor playground after lunch and have some fun. Should we play hide and seek? Or play in the sandpit? Maybe we should head for the swing? No, we should go sliding. After trying all that different kind of fun, our shoes might have got dirty. If we have a closer look at our shoes, we can see that this dirt is mostly soil. Soil is a mixture of various chemical substances, such as organic material, sand, silt, clay, minerals, and water, and even more. Soil plays a very important role for life on our Earth. The organic material is also called organic matter.',
         question: 'Where does this organic matter come from?',
@@ -88,7 +88,7 @@ export default createStore({
       },
       {
         id: '7',
-        time: '16 P.M.',
+        time: '4 P.M.',
         story:
           'After playing joyfully you must be thirsty. Luckily, we brought a reusable bottle of mineral water. Mineral water is called mineral water because it contains a lot of different minerals. Since these minerals are dissolved in the water, you can’t see them. Water is essential for life on Earth. It has many wonderful chemical and physical properties. For example, it exists in three different physical states: liquid (for example our drinking water), solid (ice), or gas (vapour). A major part of the human body is water. The amount various according to age.',
         question: 'How much water is in the human body?',
@@ -100,7 +100,7 @@ export default createStore({
       },
       {
         id: '8',
-        time: '17 P.M.',
+        time: '5 P.M.',
         story:
           'We had a great time so far. Learning and laughing so much feels so good. I hope, you are quite happy now. When you are happy, your body produces a lot of feel-good hormones. Hormones are chemical messengers, so-called neurotransmitters that are sent around the body. They tell body parts and cells what to do. Think of a cycle courier who delivers boxes and parcels. There are a bunch of different feel-good hormones such as dopamine or serotonin.',
         question: 'Which of the following chemicals makes you also feel happy?',
@@ -112,7 +112,7 @@ export default createStore({
       },
       {
         id: '9',
-        time: '20 P.M.',
+        time: '8 P.M.',
         story:
           'Before we go to bed, it would be great to rediscover the day and go through the photos of the day, which we took with our smartphone. Smartphones are mobile phones that are comparable to a computers. You can use them for emailing, reading, watching films, and of course for texting and calling friends. When you want to watch a film, you have to touch the display. This kind of display is called touchscreen. Touchscreens consist of layers of glass that conduct electricity. This electricity is the result of tiny particles moving around.',
         question: 'What do you call these tiny particles?',
@@ -124,7 +124,7 @@ export default createStore({
       },
       {
         id: '10',
-        time: '21 P.M.',
+        time: '9 P.M.',
         story:
           'A long and busy day is coming to an end. It’s time for a bedtime story. Make yourself cosy in your bed, grab your blanket and lay down on your pillow. Bed sheets are so comfy. Most bed sheets are made of cotton. Cotton is a natural product. It’s a soft, hair like fibre, which grows in fluffy balls on the cotton plant. Cotton plants like warm climate. You can find cotton plants in Asia, Australia, America, and Africa. Cotton can be dyed using natural or synthetic dyes. Dyes are organic compounds that are used to make coloured clothes such as bed linen. In ancient times, the colour Tyrian purple was very expensive and valuable so that it was the colour of royals and other mighty people.',
         question: 'Where does this purple colour come from?',
