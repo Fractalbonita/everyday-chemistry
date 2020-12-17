@@ -72,11 +72,11 @@ export default defineComponent({
   color: var(--color-surface);
   cursor: pointer;
   display: block;
-  font-size: var(--font-size-body);
+  font-size: var(--font-size-button);
   font-weight: 500;
   letter-spacing: 0.1rem;
   line-height: 1.5;
-  margin: 0.5rem 0;
+  margin: 0.7rem 0;
   outline: none;
   padding: 12px 18px;
   text-align: center;
