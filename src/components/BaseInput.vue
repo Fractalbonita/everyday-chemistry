@@ -100,6 +100,7 @@ export default defineComponent({
   height: 48px;
   outline: none;
   padding: 0 12px;
+  text-align: center;
   width: 100%;
 
   &::placeholder {
