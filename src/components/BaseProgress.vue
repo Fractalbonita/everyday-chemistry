@@ -1,5 +1,5 @@
 <template>
-  <progress :id="id" :max="name" :value="value"></progress>
+  <progress :id="id" :max="max" :value="value"></progress>
 </template>
 
 <script lang="ts">
@@ -12,8 +12,8 @@ export default defineComponent({
       type: String,
       required: true
     },
-    name: {
-      type: String,
+    max: {
+      type: [Number, String],
       required: true
     },
     value: {
