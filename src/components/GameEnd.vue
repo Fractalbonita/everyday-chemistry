@@ -25,8 +25,8 @@
     </section>
     <section v-else-if="uiState === 'poor'">
       <h2>
-        I'm sorry, {{ player
-        }}<span v-if="sidekick"> and {{ sidekick }}, you lost the game!</span>
+        I'm sorry {{ player }}<span v-if="sidekick"> and {{ sidekick }}</span
+        >, you lost the game!
       </h2>
       <p>
         You have done quite well, but you haven't answered enough questions
