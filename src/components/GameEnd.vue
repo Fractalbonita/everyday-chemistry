@@ -73,7 +73,7 @@ export default defineComponent({
     align-items: center;
     padding: 30px;
     text-align: center;
-    min-width: 350px;
+    min-width: 300px;
     max-width: 700px;
     margin: 0 auto;
   }
