@@ -1,6 +1,6 @@
 <template>
   <div class="score-container">
-    <h3 class="score-headline">Score</h3>
+    <h3 class="score-headline">Score:</h3>
     <div class="score-wrapper">
       <span class="score-number">{{ score }}</span>
     </div>
@@ -23,11 +23,13 @@ export default defineComponent({
 <style lang="scss" scoped>
 .score {
   &-headline {
-    color: var(--color-surface);
+    -webkit-text-stroke: 1px var(--color-surface);
+    -webkit-text-fill-color: var(--color-primary);
     font-family: inherit;
     font-size: var(--font-size-h3);
     font-weight: 500;
     margin: 0.7rem 0;
+    text-transform: uppercase;
   }
   &-wrapper {
     background: var(--color-primary);
