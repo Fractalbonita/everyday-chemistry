@@ -107,25 +107,21 @@ body {
   font-weight: normal;
   letter-spacing: 0.1rem;
   line-height: 1.5;
-  margin: 0;
   min-height: 100%;
 }
 h1 {
-  color: var(--color-primary);
   font-family: inherit;
   font-size: var(--font-size-h1);
   font-weight: 900;
   margin: 1.5rem 0;
 }
 h2 {
-  color: var(--color-surface);
   font-family: inherit;
   font-size: var(--font-size-h2);
   font-weight: 700;
   margin: 1rem 0;
 }
 h3 {
-  color: var(--color-surface);
   font-family: inherit;
   font-size: var(--font-size-h3);
   font-weight: 500;
