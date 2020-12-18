@@ -34,11 +34,12 @@ export default defineComponent({
   &-sidekick {
     color: black;
     text-shadow: none;
-    flex: 1 1 180px;
+    flex: 1 1 300px;
   }
+  // flex min-width: 500pxinstead of 400px is possible
   &-story {
     border-radius: 25px;
-    flex: 1 2 270px;
+    flex: 1 2 400px;
     text-align: center;
     padding: 30px;
     position: relative;
