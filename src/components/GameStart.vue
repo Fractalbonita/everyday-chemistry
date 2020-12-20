@@ -1,6 +1,12 @@
 <template>
   <div class="start-container">
     <section class="start-sidekick">
+      <SpeechBubble v-if="sidekick">
+        <p class="start-bubble">
+          Hello {{ player }}, <br />
+          I will support you during the game!
+        </p>
+      </SpeechBubble>
       <component :is="selectedSidekick"></component>
     </section>
     <section class="start-intro">
@@ -32,6 +38,7 @@ import SidekickFairy from './SidekickFairy.vue';
 import SidekickDwarf from './SidekickDwarf.vue';
 import SidekickGoblin from './SidekickGoblin.vue';
 import SidekickWizard from './SidekickWizard.vue';
+import SpeechBubble from './SpeechBubble.vue';
 
 export default defineComponent({
   name: 'GameStart',
@@ -40,6 +47,7 @@ export default defineComponent({
     SidekickDwarf,
     SidekickGoblin,
     SidekickWizard,
+    SpeechBubble,
     BaseButton
   },
   computed: {
@@ -68,6 +76,15 @@ export default defineComponent({
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  &-bubble {
+    color: var(--color-background);
+    font-family: inherit;
+    font-size: var(--font-size-button);
+    font-weight: 600;
+    margin: 0.5rem 0;
+    word-break: normal;
+    text-align: center;
   }
   // flex min-width: 500pxinstead of 400px is possible
   &-intro {
