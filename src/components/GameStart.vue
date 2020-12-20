@@ -1,6 +1,8 @@
 <template>
   <div class="start-container">
-    <section class="start-sidekick">sidekick</section>
+    <section class="start-sidekick">
+      <component :is="selectedSidekick"></component>
+    </section>
     <section class="start-intro">
       <h2 class="start-headline">
         Good morning, {{ player
@@ -26,14 +28,25 @@
 import { defineComponent } from 'vue';
 import { mapState } from 'vuex';
 import BaseButton from './BaseButton.vue';
+import SidekickFairy from './SidekickFairy.vue';
+import SidekickDwarf from './SidekickDwarf.vue';
+import SidekickGoblin from './SidekickGoblin.vue';
+import SidekickWizard from './SidekickWizard.vue';
 
 export default defineComponent({
   name: 'GameStart',
   components: {
+    SidekickFairy,
+    SidekickDwarf,
+    SidekickGoblin,
+    SidekickWizard,
     BaseButton
   },
   computed: {
-    ...mapState(['player', 'sidekick'])
+    ...mapState(['player', 'sidekick']),
+    selectedSidekick(): string {
+      return 'Sidekick' + this.sidekick;
+    }
   },
   methods: {
     startGame() {
@@ -51,6 +64,10 @@ export default defineComponent({
   }
   &-sidekick {
     flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   // flex min-width: 500pxinstead of 400px is possible
   &-intro {
@@ -89,6 +106,9 @@ export default defineComponent({
     font-size: var(--font-size-body);
     font-weight: 400;
     margin: 0.5rem 0;
+  }
+  &-wrapper {
+    position: relative;
   }
 }
 </style>

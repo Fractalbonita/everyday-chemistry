@@ -1,8 +1,7 @@
 <template>
   <div class="game-container">
     <section class="game-sidekick">
-      <p>sidekick</p>
-      <span>sidekick bubble</span>
+      <component :is="selectedSidekick"></component>
     </section>
     <section class="game-story">
       <Score />
@@ -13,14 +12,30 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import SidekickFairy from './SidekickFairy.vue';
+import SidekickDwarf from './SidekickDwarf.vue';
+import SidekickGoblin from './SidekickGoblin.vue';
+import SidekickWizard from './SidekickWizard.vue';
 import Story from './/Story.vue';
 import Score from './/Score.vue';
 
 export default defineComponent({
   name: 'Game',
   components: {
+    SidekickFairy,
+    SidekickDwarf,
+    SidekickGoblin,
+    SidekickWizard,
     Story,
     Score
+  },
+  computed: {
+    sidekick() {
+      return this.$store.state.sidekick;
+    },
+    selectedSidekick(): string {
+      return 'Sidekick' + this.sidekick;
+    }
   }
 });
 </script>
@@ -32,9 +47,11 @@ export default defineComponent({
     flex-flow: row wrap;
   }
   &-sidekick {
-    color: black;
-    text-shadow: none;
     flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   // flex min-width: 500pxinstead of 400px is possible
   &-story {
