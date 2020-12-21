@@ -7,6 +7,7 @@ export default createStore({
     sidekick: '',
     sidekickOptions: ['Fairy', 'Dwarf', 'Goblin', 'Wizard'],
     answer: '',
+    hint: false,
     score: 0,
     storyIndex: 0,
     stories: [
@@ -20,7 +21,9 @@ export default createStore({
           answerWrong: 'Acidic',
           answerCorrect: 'Neutral',
           answerFalse: 'Basic'
-        }
+        },
+        hint:
+          'Fresh milk can be very sweet. Old milk is rather sour and not really tasty.'
       },
       {
         id: '2',
@@ -33,7 +36,8 @@ export default createStore({
             'It is a natural mineral, which re-mineralizes your teeth.',
           answerFalse: 'It is a gas, which shields your teeth from cavities.',
           answerWrong: 'It is a natural mineral, which destroys bacteria.'
-        }
+        },
+        hint: 'Fluoride is a mineral.'
       },
       {
         id: '3',
@@ -45,7 +49,8 @@ export default createStore({
           answerFalse: 'scrubbers',
           answerCorrect: 'surfactants',
           answerWrong: 'indicators'
-        }
+        },
+        hint: 'In chemistry, indicators are used to determine the pH.'
       },
       {
         id: '4',
@@ -57,7 +62,9 @@ export default createStore({
           answerCorrect: 'Cellulose',
           answerWrong: 'Starch',
           answerFalse: 'Chlorophyll'
-        }
+        },
+        hint:
+          'Chlorophyll is a chemical substance that makes the leaves of plants green.'
       },
       {
         id: '5',
@@ -69,7 +76,8 @@ export default createStore({
           answerFalse: 'Lipid',
           answerWrong: 'Protein',
           answerCorrect: 'Monosaccharide'
-        }
+        },
+        hint: 'Fats are lipids and are not sweet at all.'
       },
       {
         id: '6',
@@ -84,7 +92,8 @@ export default createStore({
             'It comes from plants and animals that have died and decayed.',
           answerFalse:
             'It comes from atmospheric dust that has settled on the ground.'
-        }
+        },
+        hint: 'no hint so far'
       },
       {
         id: '7',
@@ -96,7 +105,8 @@ export default createStore({
           answerFalse: 'On average, 40% of the human body is water.',
           answerWrong: 'On average, 80% of the human body is water.',
           answerCorrect: 'On average, 60% of the human body is water.'
-        }
+        },
+        hint: 'More than half of our body is water.'
       },
       {
         id: '8',
@@ -108,7 +118,9 @@ export default createStore({
           answerWrong: 'Insulin',
           answerCorrect: 'Endorphin',
           answerFalse: 'Vitamin C'
-        }
+        },
+        hint:
+          'Insulin is a hormone that helps sugar (glucose) enter the body’s cells.'
       },
       {
         id: '9',
@@ -120,7 +132,8 @@ export default createStore({
           answerCorrect: 'Electrons',
           answerFalse: 'Atoms',
           answerWrong: 'Quarks'
-        }
+        },
+        hint: 'Atoms are the building blocks for everything in our world.'
       },
       {
         id: '10',
@@ -130,9 +143,10 @@ export default createStore({
         question: 'Where does this purple colour come from?',
         answers: {
           answerWrong: 'Insects',
-          answerFalse: 'Madder',
+          answerFalse: 'Beetroot',
           answerCorrect: 'Snails '
-        }
+        },
+        hint: 'It comes from animals.'
       }
     ]
   },
@@ -164,6 +178,12 @@ export default createStore({
           state.uiState = 'poor';
         }
       }
+    },
+    showHint(state) {
+      state.hint = true;
+    },
+    hideHint(state) {
+      state.hint = false;
     },
     restartGame(state) {
       state.uiState = 'welcome';
