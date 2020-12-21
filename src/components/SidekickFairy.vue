@@ -1,7 +1,7 @@
 <template>
   <div>
     <img
-      src="../assets/images/characters/fairy.svg"
+      src="../assets/images/sidekicks/fairy.svg"
       height="300"
       width="300"
       alt="Fairy with red wings wearing a red-green dress and shoes."

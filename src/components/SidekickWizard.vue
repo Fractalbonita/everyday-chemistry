@@ -1,7 +1,7 @@
 <template>
   <div>
     <img
-      src="../assets/images/characters/wizard.svg"
+      src="../assets/images/sidekicks/wizard.svg"
       height="300"
       width="300"
       alt="Wizard with a blue robe and hat covered with stars"

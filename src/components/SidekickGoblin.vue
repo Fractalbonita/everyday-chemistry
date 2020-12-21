@@ -1,7 +1,7 @@
 <template>
   <div>
     <img
-      src="../assets/images/characters/goblin.svg"
+      src="../assets/images/sidekicks/goblin.svg"
       height="300"
       width="300"
       alt="Goblin waring a green jacket and sitting on the floor and smiling"

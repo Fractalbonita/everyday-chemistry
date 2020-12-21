@@ -1,7 +1,7 @@
 <template>
   <div>
     <img
-      src="../assets/images/characters/dwarf.svg"
+      src="../assets/images/sidekicks/dwarf.svg"
       height="300"
       width="300"
       alt="Dwarf with a purple coat and a green hat, who is smiling and waving."
