@@ -68,7 +68,6 @@ export default defineComponent({
   &-container {
     border-radius: 25px;
     background: var(--color-primary);
-    box-shadow: 0 2px 8px var(--color-text-shadow);
     display: flex;
     flex-direction: column;
     align-items: center;
