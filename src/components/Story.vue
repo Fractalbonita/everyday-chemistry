@@ -40,6 +40,7 @@ export default defineComponent({
   methods: {
     selectAnswer(answer: string) {
       this.$store.commit('selectAnswer', answer);
+      this.$store.commit('hideHint');
     },
     shuffle<T>(array: T[]) {
       for (let i = array.length - 1; i > 0; i--) {
