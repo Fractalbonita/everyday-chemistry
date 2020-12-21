@@ -1,7 +1,7 @@
 <template>
   <div class="game-container">
     <section class="game-sidekick">
-      <component :is="selectedSidekick"></component>
+      <Hint />
     </section>
     <section class="game-story">
       <Score />
@@ -12,30 +12,16 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import SidekickFairy from './SidekickFairy.vue';
-import SidekickDwarf from './SidekickDwarf.vue';
-import SidekickGoblin from './SidekickGoblin.vue';
-import SidekickWizard from './SidekickWizard.vue';
+import Hint from './Hint.vue';
 import Story from './/Story.vue';
 import Score from './/Score.vue';
 
 export default defineComponent({
   name: 'Game',
   components: {
-    SidekickFairy,
-    SidekickDwarf,
-    SidekickGoblin,
-    SidekickWizard,
+    Hint,
     Story,
     Score
-  },
-  computed: {
-    sidekick() {
-      return this.$store.state.sidekick;
-    },
-    selectedSidekick(): string {
-      return 'Sidekick' + this.sidekick;
-    }
   }
 });
 </script>
