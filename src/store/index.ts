@@ -93,7 +93,8 @@ export default createStore({
           answerFalse:
             'It comes from atmospheric dust that has settled on the ground.'
         },
-        hint: 'no hint so far'
+        hint:
+          'Atmospheric dust contains diverse tiny particles, such as organic matter, minerals, microbial organisms, pollutants ...'
       },
       {
         id: '7',
@@ -146,7 +147,7 @@ export default createStore({
           answerFalse: 'Beetroot',
           answerCorrect: 'Snails '
         },
-        hint: 'It comes from animals.'
+        hint: 'Tyrian purple is made from animals.'
       }
     ]
   },
