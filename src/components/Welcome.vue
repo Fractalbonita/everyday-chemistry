@@ -2,7 +2,7 @@
   <div class="welcome-container">
     <h1>Welcome to the Everyday Chemistry Game!</h1>
     <p>
-      In this game you will discover that we are surrounded by chemisty in many
+      In this game you will discover that we are surrounded by chemistry in many
       areas of our daily life. Before we start the game, you surely want to tell
       me your name.
     </p>
