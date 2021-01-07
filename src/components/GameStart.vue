@@ -79,7 +79,7 @@ export default defineComponent({
   }
   &-bubble {
     color: var(--color-background);
-    font-family: inherit;
+    font-family: 'Gochi Hand', Helvetica, Arial, sans-serif;
     font-size: var(--font-size-button);
     font-weight: 600;
     margin: 0.5rem 0;

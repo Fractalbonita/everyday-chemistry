@@ -88,6 +88,13 @@ export default defineComponent({
   --font-size-h2: 1.5rem;
   --font-size-h3: 1.25rem;
 }
+@font-face {
+  font-family: 'Gochi Hand';
+  font-style: normal;
+  font-weight: 400;
+  src: local('GochiHand-Regular'),
+    url('/assets/fonts/Gochi_Hand/GochiHand-Regular.ttf') format('truetype');
+}
 * {
   box-sizing: border-box;
   margin: 0;
