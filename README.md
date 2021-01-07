@@ -17,7 +17,9 @@ The Everyday Chemistry Game is an educational app that teaches kids and adults a
 
 ## Impressions
 
-Coming soon!
+**Tablet**
+
+<img src="./screenshots/screen_fairy_welcome.png" height="300"> <img src="./screenshots/screen_dwarf_question.png" height="300"> <img src="./screenshots/screen_goblin_hint.png" height="300"> <img src="./screenshots/screen_wizard_final-question.png" height="300"> <img src="./screenshots/screen_wizard_game-end.png" height="300">
 
 ## Project setup
 
