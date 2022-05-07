@@ -4,10 +4,6 @@
 
 The Everyday Chemistry Game is an educational app that teaches kids and adults alike everyday chemistry. During the game-based multiple choice quiz the kids will discover that they are surrounded by chemistry in many areas of their daily life. They can choose a "virtual friend" who gives them hints.
 
-## Demo
-
-[Everyday Chemistry Game](https://everyday-chemistry-game.herokuapp.com)
-
 ## Tech stack
 
 - Vue 3
